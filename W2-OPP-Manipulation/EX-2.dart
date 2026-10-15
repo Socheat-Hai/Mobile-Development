@@ -5,7 +5,7 @@ class BankAccount {
 
   BankAccount(this._accountId, this._owner);
 
-  int get id => _accountId;
+  int get accountId => _accountId;
   String get owner => _owner;
 
   double balance() {
