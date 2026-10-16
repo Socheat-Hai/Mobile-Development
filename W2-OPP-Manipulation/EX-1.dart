@@ -13,7 +13,7 @@ class Employee {
     : _skills = [Skill.DART, Skill.FLUTTER];
 
   Employee.newHire(this._name,this._baseSalary, this._skills, this._address)
-    : _yearsOfExperience = 1; 
+    : _yearsOfExperience = 0; 
 
   String get name => _name;
   double get baseSalary => _baseSalary;
