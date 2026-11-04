@@ -36,7 +36,7 @@ class Bank {
     bool exists = _bankAcc.any((a) => a._accountId == accountId);
 
     if (exists){
-      throw Exception('This account was already exist.');
+      throw Exception('This account already exist.');
     }
     
     var account = BankAccount(accountId, accountOwner);
