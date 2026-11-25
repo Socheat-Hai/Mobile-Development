@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:week8_practice/EXERCISE-3/data/profile_data.dart';
 
 import 'ui/screens/profile.dart';
  
 void main() {
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: ProfileApp(),
+    home: ProfileApp(data: ronanProfile),
   ));
 }
