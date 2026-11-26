@@ -21,6 +21,10 @@ class _TemperatureAppState extends State<TemperatureApp> {
       isWelcomeScreen = false;
     });
   }
+
+  Widget get content {
+    return isWelcomeScreen ? WelcomeScreen(onStart: switchScreen) : TemperatureScreen();
+  }
   
   @override
   Widget build(context) {
@@ -38,7 +42,7 @@ class _TemperatureAppState extends State<TemperatureApp> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: isWelcomeScreen ? WelcomeScreen(onStart: switchScreen) : TemperatureScreen()
+          child: content
         ),
       ),
     );
